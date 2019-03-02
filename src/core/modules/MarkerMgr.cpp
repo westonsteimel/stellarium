@@ -287,25 +287,25 @@ HorizonMarker::HorizonMarker(const float az, const float alt, const float& size,
 	switch (markerType)
 	{
 		case SkyMarker::Cross:
-			fileName = "cross.png";
+			fileName = "cross.svg";
 			break;
 		case SkyMarker::Circle:
-			fileName = "neb_lrg.png";
+			fileName = "circle.svg";
 			break;
 		case SkyMarker::Ellipse:
 			fileName = "neb_gal_lrg.png";
 			break;
 		case SkyMarker::Square:
-			fileName = "neb_dif_lrg.png";
+			fileName = "square.svg";
 			break;
 		case SkyMarker::DottedCircle:
 			fileName = "neb_ocl_lrg.png";
 			break;
 		case SkyMarker::CircledCross:
-			fileName = "neb_gcl_lrg.png";
+			fileName = "circled-cross.svg";
 			break;
 		case SkyMarker::DashedSquare:
-			fileName = "neb_drk_lrg.png";
+			fileName = "dashed-square.svg";
 			break;
 		case SkyMarker::SquaredDCircle:
 			fileName = "neb_ocln_lrg.png";
@@ -320,7 +320,7 @@ HorizonMarker::HorizonMarker(const float az, const float alt, const float& size,
 			fileName = "gear.png";
 			break;
 	}
-	markerTexture = StelApp::getInstance().getTextureManager().createTexture(StelFileMgr::getInstallationDir()+"/textures/"+fileName);
+	markerTexture = StelApp::getInstance().getTextureManager().createTextureSvg(StelFileMgr::getInstallationDir()+"/textures/"+fileName, (int)size);
 }
 
 HorizonMarker::~HorizonMarker()

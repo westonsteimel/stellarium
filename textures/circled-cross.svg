@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg3802"
+   version="1.1"
+   viewBox="0 0 135.46666 135.46667"
+   height="512"
+   width="512">
+  <defs
+     id="defs3796" />
+  <metadata
+     id="metadata3799">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-161.53332)"
+     id="layer1">
+    <path
+       id="text3866"
+       transform="matrix(0.26458333,0,0,0.26458333,0,161.53332)"
+       d="M 255.85156 22.828125 C 217.43274 22.828125 179.01452 33.959444 140.5957 56.222656 C 63.561049 100.74908 25.042969 167.34119 25.042969 256 C 25.042969 344.65881 63.561049 411.25092 140.5957 455.77734 C 179.01452 478.04056 217.43274 489.17188 255.85156 489.17188 C 294.4674 489.17188 332.98548 478.04056 371.4043 455.77734 C 448.43895 411.25092 486.95703 344.65881 486.95703 256 C 486.95703 167.34119 448.43895 100.74908 371.4043 56.222656 C 332.98548 33.959444 294.4674 22.828125 255.85156 22.828125 z M 228.99805 59.833984 L 228.99805 228.67578 L 61.148438 228.67578 C 68.303504 166.72174 100.59701 119.18555 158.03125 86.070312 C 181.63442 72.337558 205.29101 63.595831 228.99805 59.833984 z M 283.00195 59.857422 C 306.76057 63.632738 330.41696 72.367452 353.96875 86.070312 C 411.40299 119.18555 443.6965 166.72174 450.85156 228.67578 L 283.00195 228.67578 L 283.00195 59.857422 z M 61.148438 283.32422 L 228.99805 283.32422 L 228.99805 452.16602 C 205.29101 448.40417 181.63442 439.66244 158.03125 425.92969 C 100.59701 392.81445 68.303504 345.27826 61.148438 283.32422 z M 283.00195 283.32422 L 450.85156 283.32422 C 443.6965 345.27826 411.40299 392.81445 353.96875 425.92969 C 330.41696 439.63255 306.76057 448.36726 283.00195 452.14258 L 283.00195 283.32422 z "
+       style="font-style:normal;font-weight:normal;font-size:160.13751221px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:24.20976448px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       id="text3875"
+       y="259.31497"
+       x="-54.522984"
+       style="font-style:normal;font-weight:normal;font-size:6.61458302px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332px"
+         y="265.16733"
+         x="-54.522984"
+         id="tspan3873"></tspan></text>
+  </g>
+</svg>
