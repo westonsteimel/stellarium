@@ -32,6 +32,8 @@
 #include <cstdlib>
 #include <QOpenGLContext>
 #include <QThreadPool>
+#include <QtSvg/QSvgRenderer>
+#include <QPainter>
 
 StelTextureMgr::StelTextureMgr(QObject *parent)
 	: QObject(parent), glMemoryUsage(0), loaderThreadPool(new QThreadPool(this))
@@ -87,6 +89,33 @@ StelTextureSP StelTextureMgr::createTexture(const QString& afilename, const Stel
 	}
 }
 
+StelTextureSP StelTextureMgr::createTextureSvg(const QString &filename, const int size, const StelTexture::StelTextureParams &params)
+{
+	if (filename.isEmpty())
+		return StelTextureSP();
+
+	QFileInfo info(filename);
+	QString canPath = info.canonicalFilePath();
+
+	if(canPath.isEmpty()) //file does not exist
+	{
+		qWarning()<<"Texture"<<filename<<"does not exist";
+		return StelTextureSP();
+	}
+
+	QSvgRenderer renderer(canPath);
+	QImage image(size, size, QImage::Format_RGB888); // without alpha channel
+	image.fill(0xffffff); // white background
+
+	QPainter painter(&image);
+	renderer.render(&painter);
+	image.invertPixels(QImage::InvertRgb); // invert RGB pixels to get black background
+
+	if (image.isNull())
+		return StelTextureSP();
+	else
+		return createTexture(image, params);
+}
 
 StelTextureSP StelTextureMgr::createTextureThread(const QString& url, const StelTexture::StelTextureParams& params, bool lazyLoading)
 {

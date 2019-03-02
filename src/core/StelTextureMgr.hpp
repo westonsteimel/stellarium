@@ -46,6 +46,12 @@ public:
 	//! Create a texture from a QImage.
 	StelTextureSP createTexture(const QImage &image, const StelTexture::StelTextureParams& params=StelTexture::StelTextureParams());
 
+	//! Load an SVG image from a file and create a new texture from it
+	//! @param filename the SVG file name, can be absolute path if starts with '/' otherwise
+	//!    the file will be looked for in Stellarium's standard textures directories.
+	//! @param params the texture creation parameters.
+	StelTextureSP createTextureSvg(const QString& filename, const int size, const StelTexture::StelTextureParams& params=StelTexture::StelTextureParams());
+
 	//! Load an image from a file and create a new texture from it in a new thread.
 	//! @note This method is safe to be called from threads other than the main thread.
 	//! @param url the texture file name or URL, can be absolute path if starts with '/' otherwise
